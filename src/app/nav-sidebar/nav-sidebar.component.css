@@ -1,0 +1,87 @@
+/* General container styles */
+.example-container {
+  height: 100%;
+}
+
+/* Sidenav styles */
+.example-sidenav {
+  width: 250px;
+  background-color: #333;
+  color: white;
+}
+
+.mat-nav-list a {
+  color: white !important;
+}
+
+/* Toolbar styles */
+.example-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333 !important;
+  color: white;
+  height: 56px; /* Height for smaller screens */
+}
+
+/* Navbar styles for larger screens */
+.example-navbar {
+  display: none;
+  background-color: #333 !important;
+  color: white;
+  height: 32px; /* Further reduced height for larger screens */
+}
+
+.navbar-link {
+  color: white !important;
+}
+
+/* Menu button for smaller screens */
+.example-menu-button {
+  display: block;
+  color: white;
+  background-color: #333;
+  height: 40px; /* Adjust height */
+  width: 40px; /* Adjust width */
+  margin-right: 16px;
+}
+
+.example-menu-button mat-icon {
+  font-size: 24px; /* Adjust icon size if needed */
+}
+
+/* Content styles */
+.example-content {
+  padding: 16px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .example-navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .example-toolbar {
+    height: 32px; /* Further reduced height for larger screens */
+  }
+
+  .example-menu-button {
+    display: none;
+  }
+
+  .example-sidenav {
+    display: none;
+  }
+}
+
+/* Override Angular Material default colors */
+.mat-toolbar.mat-primary {
+  background: #333 !important;
+  color: white !important;
+}
+
+.mat-list-item {
+  color: white !important;
+}
